@@ -1,4 +1,4 @@
-# spring-boot-hello-world-ci
+# python-http-server-ci
 Automated Jenkins server setup using Docker
 
 To build run the jenkins server:
