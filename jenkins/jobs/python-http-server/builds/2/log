@@ -1,0 +1,56 @@
+Started by user [8mha:////4IkjnWI7aJX1ENhiEF9UG9k35dMs5+7ZqSgEvueATAuIAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace /var/jenkins_home/jobs/python-http-server/workspace
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+Cloning the remote Git repository
+Cloning repository https://github.com/willbennett95/python-http-server
+ > git init /var/jenkins_home/jobs/python-http-server/workspace # timeout=10
+Fetching upstream changes from https://github.com/willbennett95/python-http-server
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/willbennett95/python-http-server +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/willbennett95/python-http-server # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/willbennett95/python-http-server # timeout=10
+Fetching upstream changes from https://github.com/willbennett95/python-http-server
+ > git fetch --tags --progress https://github.com/willbennett95/python-http-server +refs/heads/*:refs/remotes/origin/*
+Seen branch in repository origin/master
+Seen 1 remote branch
+ > git show-ref --tags -d # timeout=10
+Checking out Revision ad182bc72f01b7b066813176f820a4fe41894ce5 (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ad182bc72f01b7b066813176f820a4fe41894ce5
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b master ad182bc72f01b7b066813176f820a4fe41894ce5
+Commit message: "added Dockerfile"
+ > git rev-list --no-walk ad182bc72f01b7b066813176f820a4fe41894ce5 # timeout=10
+[workspace] $ /bin/bash /tmp/jenkins3407549608292314875.sh
+master
+868979a22ab7        python-http-server:master       "/opt/python-http-se…"   About a minute ago   Up About a minute                         python-http-server-master
+python-http-server-master
+868979a22ab7        python-http-server:master       "/opt/python-http-se…"   About a minute ago   Exited (137) Less than a second ago                         python-http-server-master
+python-http-server-master
+cecb91c6fbda
+Untagged: python-http-server:master
+Deleted: sha256:cecb91c6fbdad12db70a5b42389eb21c12aad72ca84f9f10764fcb3b1058aca3
+Deleted: sha256:916fbbb8ddce948f7b86b099637d77741d04b1321c59260d6210c1954c955661
+Deleted: sha256:dbcf0e3f8365f332a83c8870dc34bead4069eea9f689bbba23863a157924133b
+Deleted: sha256:d0f7ce0b534070ecdce88be748aedc8b4dd8de95aca3b6cd1a2b8aa288e0fa0a
+Deleted: sha256:1969491d2e6fe53a24203d4418efc0900ac13bf55b42ca65bace0f153dae851f
+Sending build context to Docker daemon  66.05kB
+Step 1/4 : FROM python
+ ---> 1e80caffd59e
+Step 2/4 : COPY http-server /opt/python-http-server/http-server
+ ---> d9bf495522b2
+Removing intermediate container 0310c5361624
+Step 3/4 : COPY public /opt/python-http-server/public
+ ---> f8d838d6159b
+Removing intermediate container 3e820946758f
+Step 4/4 : ENTRYPOINT /opt/python-http-server/http-server
+ ---> Running in 46b9a9bc2bef
+ ---> 74bc6200791a
+Removing intermediate container 46b9a9bc2bef
+Successfully built 74bc6200791a
+30a635219f19216af01c45cb78cdd26ef415343b0ce349741e401bfd265c6e2b
+2018/11/21 15:30:52 [notice] 11#11: signal process started
+Finished: SUCCESS
